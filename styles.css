@@ -1,26 +1,41 @@
-.banner
-{
-    width: 100%;
-    height: auto;
+.banner {
+	width: 100%;
+	height: auto;
 }
 
-.barraNav
-{
-    background-color: rgb(62, 156, 125);
+.barraNav {
+	background-color: rgb(62, 156, 125);
 }
 
-.cardos
-{
-    margin: 1.5rem;
+/* sería buena idea cambiar el peso de la fuente o el color
+    de la misma para que los enlaces sean más visibles
+*/
+.nav-link {
+	color: yellow !important; /* el !important es necesario porque bootstrap ya implementa algo que cambia el color, el color es de ejemplo*/
+	font-weight: bold; /*estéticamente no es muy bonito */
 }
 
-.carrousel-back
-{
-    background-color: beige;
+.cards {
+	margin: 1.5rem;
 }
 
-.footer
-{
-    background-color: cadetblue;
-    height: 3rem;
+.carrousel-back {
+	background-color: cadetblue;
+	/*se ve mas consistente con el color del footer, aunque implica cambiar el color de los links*/
+}
+
+.carrousel-back > a {
+	color: yellow; /* cambiar links del carrousel por aparte*/
+}
+
+.footer {
+	background-color: cadetblue;
+	height: 3rem;
+}
+
+/**/
+.embeddedVideo {
+	padding: 5%;
+	width: 100%;
+	aspect-ratio: 16/9;
 }
